@@ -8,7 +8,292 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Карточки товаров</title>
 </head>
-<body class="">
-    <h1>Hello</h1>
+<body class="p-0 xl:pt-[66px] xl:px-[209px] h-full flex items-center justify-center">
+    <main class="flex flex-col w-full p-6 xl:w-[942px]">
+        <div class="w-full mb-4 md:hidden">
+            <img src="img/burger.svg" alt="burger" class="ml-auto">
+        </div>
+        <form action="#" class="hidden mb-[40px] font-[Roboto] md:flex justify-between items-center xl:w-[942px]">
+            <div class="inline-flex items-center">
+                <label
+                        class="relative flex cursor-pointer items-center p-3"
+                        for="hit"
+                        data-ripple-dark="true"
+                >
+                    <input
+                            id="hit"
+                            type="checkbox"
+                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none border border-black transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-[28px] before:w-[28px] before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 before:transition-opacity checked:border-[#087A28] checked:bg-[#087A28] hover:before:opacity-10"
+                    />
+                    <span class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-3.5 w-3.5"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                stroke="currentColor"
+                                stroke-width="1"
+                        >
+                            <path
+                                    fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                    </span>
+                </label>
+                <label
+                        class="mt-px cursor-pointer select-none uppercase"
+                        for="hit"
+                >
+                    Хит продаж
+                </label>
+            </div>
+            <div class="inline-flex items-center">
+                <label
+                        class="relative flex cursor-pointer items-center p-3"
+                        for="new"
+                        data-ripple-dark="true"
+                >
+                    <input
+                            id="new"
+                            type="checkbox"
+                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none border border-black transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-[28px] before:w-[28px] before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 before:transition-opacity checked:border-[#087A28] checked:bg-[#087A28] hover:before:opacity-10"
+                    />
+                    <span class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-3.5 w-3.5"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                stroke="currentColor"
+                                stroke-width="1"
+                        >
+                            <path
+                                    fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                    </span>
+                </label>
+                <label
+                        class="mt-px cursor-pointer select-none uppercase"
+                        for="new"
+                >
+                    Новинки
+                </label>
+            </div>
+            <div class="inline-flex items-center">
+                <label
+                        class="relative flex cursor-pointer items-center p-3"
+                        for="special"
+                        data-ripple-dark="true"
+                >
+                    <input
+                            id="special"
+                            type="checkbox"
+                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none border border-black transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-[28px] before:w-[28px] before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 before:transition-opacity checked:border-[#087A28] checked:bg-[#087A28] hover:before:opacity-10"
+                    />
+                    <span class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-3.5 w-3.5"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                stroke="currentColor"
+                                stroke-width="1"
+                        >
+                            <path
+                                    fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                    </span>
+                </label>
+                <label
+                        class="mt-px cursor-pointer select-none uppercase"
+                        for="special"
+                >
+                    Акция
+                </label>
+            </div>
+            <div class="inline-flex items-center">
+                <label
+                        class="relative flex cursor-pointer items-center p-3"
+                        for="in_stock"
+                        data-ripple-dark="true"
+                >
+                    <input
+                            id="in_stock"
+                            type="checkbox"
+                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none border border-black transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-[28px] before:w-[28px] before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 before:transition-opacity checked:border-[#087A28] checked:bg-[#087A28] hover:before:opacity-10"
+                    />
+                    <span class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-3.5 w-3.5"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                stroke="currentColor"
+                                stroke-width="1"
+                        >
+                            <path
+                                    fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                    </span>
+                </label>
+                <label
+                        class="mt-px cursor-pointer select-none uppercase"
+                        for="in_stock"
+                >
+                    В наличии
+                </label>
+            </div>
+            <button type="submit" class="uppercase px-3 py-2 bg-[#087A28] text-white hover:bg-[#50B9B9]">Применить</button>
+        </form>
+        <div class="flex flex-col md:flex-row gap-[36px] xl:w-[942px] flex-wrap items-center justify-evenly">
+            <div class="flex min-[500px]:flex-row max-md:flex-col md:flex-col bg-[#EFF5F5] cursor-pointer">
+                <div class="min-[500px]:mb-0 max-md:mb-[15px] md:mb-[15px] w-[260px] h-[260px] md:w-[290px] md:h-[290px] bg-card"></div>
+                <div class="flex h-full flex-col gap-[5px] mx-3 self-center">
+                    <span class="font-[Proxima_Nova] text-[#6E6659] text-[14px]">Кресла театральные</span>
+                    <span class="font-[Proxima_Nova] font-semibold text-[18px] text-[#264E58]">
+                        Театральное кресло Прайм
+                    </span>
+                    <div class="flex flex-row font-[Proxima_Nova] text-[#A5A5A5] text-[14px]">
+                        Артикул:<p class="ml-1 text-[#264E58]">789-2341</p>
+                    </div>
+                    <div class="flex flex-row self-baseline items-baseline font-[Proxima_Nova] text-[#6E6659] text-[14px] pb-1">
+                        от:<p class="ml-1 mr-1 text-[#6E6659] text-[24px] font-bold">6 762</p>Р
+                    </div>
+                </div>
+            </div>
+            <div class="flex min-[500px]:flex-row max-md:flex-col md:flex-col bg-[#EFF5F5] cursor-pointer">
+                <div class="min-[500px]:mb-0 max-md:mb-[15px] md:mb-[15px] w-[260px] h-[260px] md:w-[290px] md:h-[290px] bg-card"></div>
+                <div class="flex h-full flex-col gap-[5px] mx-3 self-center">
+                    <span class="font-[Proxima_Nova] text-[#6E6659] text-[14px]">Кресла театральные</span>
+                    <span class="font-[Proxima_Nova] font-semibold text-[18px] text-[#264E58]">
+                        Театральное кресло Прайм
+                    </span>
+                    <div class="flex flex-row font-[Proxima_Nova] text-[#A5A5A5] text-[14px]">
+                        Артикул:<p class="ml-1 text-[#264E58]">789-2341</p>
+                    </div>
+                    <div class="flex flex-row self-baseline items-baseline font-[Proxima_Nova] text-[#6E6659] text-[14px] pb-1">
+                        от:<p class="ml-1 mr-1 text-[#6E6659] text-[24px] font-bold">6 762</p>Р
+                    </div>
+                </div>
+            </div>
+            <div class="flex min-[500px]:flex-row max-md:flex-col md:flex-col bg-[#EFF5F5] cursor-pointer">
+                <div class="min-[500px]:mb-0 max-md:mb-[15px] md:mb-[15px] w-[260px] h-[260px] md:w-[290px] md:h-[290px] bg-card"></div>
+                <div class="flex h-full flex-col gap-[5px] mx-3 self-center">
+                    <span class="font-[Proxima_Nova] text-[#6E6659] text-[14px]">Кресла театральные</span>
+                    <span class="font-[Proxima_Nova] font-semibold text-[18px] text-[#264E58]">
+                        Театральное кресло Прайм
+                    </span>
+                    <div class="flex flex-row font-[Proxima_Nova] text-[#A5A5A5] text-[14px]">
+                        Артикул:<p class="ml-1 text-[#264E58]">789-2341</p>
+                    </div>
+                    <div class="flex flex-row self-baseline items-baseline font-[Proxima_Nova] text-[#6E6659] text-[14px] pb-1">
+                        от:<p class="ml-1 mr-1 text-[#6E6659] text-[24px] font-bold">6 762</p>Р
+                    </div>
+                </div>
+            </div>
+            <div class="flex min-[500px]:flex-row max-md:flex-col md:flex-col bg-[#EFF5F5] cursor-pointer">
+                <div class="min-[500px]:mb-0 max-md:mb-[15px] md:mb-[15px] w-[260px] h-[260px] md:w-[290px] md:h-[290px] bg-card"></div>
+                <div class="flex h-full flex-col gap-[5px] mx-3 self-center">
+                    <span class="font-[Proxima_Nova] text-[#6E6659] text-[14px]">Кресла театральные</span>
+                    <span class="font-[Proxima_Nova] font-semibold text-[18px] text-[#264E58]">
+                        Театральное кресло Прайм
+                    </span>
+                    <div class="flex flex-row font-[Proxima_Nova] text-[#A5A5A5] text-[14px]">
+                        Артикул:<p class="ml-1 text-[#264E58]">789-2341</p>
+                    </div>
+                    <div class="flex flex-row self-baseline items-baseline font-[Proxima_Nova] text-[#6E6659] text-[14px] pb-1">
+                        от:<p class="ml-1 mr-1 text-[#6E6659] text-[24px] font-bold">6 762</p>Р
+                    </div>
+                </div>
+            </div>
+            <div class="flex min-[500px]:flex-row max-md:flex-col md:flex-col bg-[#EFF5F5] cursor-pointer">
+                <div class="min-[500px]:mb-0 max-md:mb-[15px] md:mb-[15px] w-[260px] h-[260px] md:w-[290px] md:h-[290px] bg-card"></div>
+                <div class="flex h-full flex-col gap-[5px] mx-3 self-center">
+                    <span class="font-[Proxima_Nova] text-[#6E6659] text-[14px]">Кресла театральные</span>
+                    <span class="font-[Proxima_Nova] font-semibold text-[18px] text-[#264E58]">
+                        Театральное кресло Прайм
+                    </span>
+                    <div class="flex flex-row font-[Proxima_Nova] text-[#A5A5A5] text-[14px]">
+                        Артикул:<p class="ml-1 text-[#264E58]">789-2341</p>
+                    </div>
+                    <div class="flex flex-row self-baseline items-baseline font-[Proxima_Nova] text-[#6E6659] text-[14px] pb-1">
+                        от:<p class="ml-1 mr-1 text-[#6E6659] text-[24px] font-bold">6 762</p>Р
+                    </div>
+                </div>
+            </div>
+            <div class="flex min-[500px]:flex-row max-md:flex-col md:flex-col bg-[#EFF5F5] cursor-pointer">
+                <div class="min-[500px]:mb-0 max-md:mb-[15px] md:mb-[15px] w-[260px] h-[260px] md:w-[290px] md:h-[290px] bg-card"></div>
+                <div class="flex h-full flex-col gap-[5px] mx-3 self-center">
+                    <span class="font-[Proxima_Nova] text-[#6E6659] text-[14px]">Кресла театральные</span>
+                    <span class="font-[Proxima_Nova] font-semibold text-[18px] text-[#264E58]">
+                        Театральное кресло Прайм
+                    </span>
+                    <div class="flex flex-row font-[Proxima_Nova] text-[#A5A5A5] text-[14px]">
+                        Артикул:<p class="ml-1 text-[#264E58]">789-2341</p>
+                    </div>
+                    <div class="flex flex-row self-baseline items-baseline font-[Proxima_Nova] text-[#6E6659] text-[14px] pb-1">
+                        от:<p class="ml-1 mr-1 text-[#6E6659] text-[24px] font-bold">6 762</p>Р
+                    </div>
+                </div>
+            </div>
+            <div class="flex min-[500px]:flex-row max-md:flex-col md:flex-col bg-[#EFF5F5] cursor-pointer">
+                <div class="min-[500px]:mb-0 max-md:mb-[15px] md:mb-[15px] w-[260px] h-[260px] md:w-[290px] md:h-[290px] bg-card"></div>
+                <div class="flex h-full flex-col gap-[5px] mx-3 self-center">
+                    <span class="font-[Proxima_Nova] text-[#6E6659] text-[14px]">Кресла театральные</span>
+                    <span class="font-[Proxima_Nova] font-semibold text-[18px] text-[#264E58]">
+                        Театральное кресло Прайм
+                    </span>
+                    <div class="flex flex-row font-[Proxima_Nova] text-[#A5A5A5] text-[14px]">
+                        Артикул:<p class="ml-1 text-[#264E58]">789-2341</p>
+                    </div>
+                    <div class="flex flex-row self-baseline items-baseline font-[Proxima_Nova] text-[#6E6659] text-[14px] pb-1">
+                        от:<p class="ml-1 mr-1 text-[#6E6659] text-[24px] font-bold">6 762</p>Р
+                    </div>
+                </div>
+            </div>
+            <div class="flex min-[500px]:flex-row max-md:flex-col md:flex-col bg-[#EFF5F5] cursor-pointer">
+                <div class="min-[500px]:mb-0 max-md:mb-[15px] md:mb-[15px] w-[260px] h-[260px] md:w-[290px] md:h-[290px] bg-card"></div>
+                <div class="flex h-full flex-col gap-[5px] mx-3 self-center">
+                    <span class="font-[Proxima_Nova] text-[#6E6659] text-[14px]">Кресла театральные</span>
+                    <span class="font-[Proxima_Nova] font-semibold text-[18px] text-[#264E58]">
+                        Театральное кресло Прайм
+                    </span>
+                    <div class="flex flex-row font-[Proxima_Nova] text-[#A5A5A5] text-[14px]">
+                        Артикул:<p class="ml-1 text-[#264E58]">789-2341</p>
+                    </div>
+                    <div class="flex flex-row self-baseline items-baseline font-[Proxima_Nova] text-[#6E6659] text-[14px] pb-1">
+                        от:<p class="ml-1 mr-1 text-[#6E6659] text-[24px] font-bold">6 762</p>Р
+                    </div>
+                </div>
+            </div>
+            <div class="flex min-[500px]:flex-row max-md:flex-col md:flex-col bg-[#EFF5F5] cursor-pointer">
+                <div class="min-[500px]:mb-0 max-md:mb-[15px] md:mb-[15px] w-[260px] h-[260px] md:w-[290px] md:h-[290px] bg-card"></div>
+                <div class="flex h-full flex-col gap-[5px] mx-3 self-center">
+                    <span class="font-[Proxima_Nova] text-[#6E6659] text-[14px]">Кресла театральные</span>
+                    <span class="font-[Proxima_Nova] font-semibold text-[18px] text-[#264E58]">
+                        Театральное кресло Прайм
+                    </span>
+                    <div class="flex flex-row font-[Proxima_Nova] text-[#A5A5A5] text-[14px]">
+                        Артикул:<p class="ml-1 text-[#264E58]">789-2341</p>
+                    </div>
+                    <div class="flex flex-row self-baseline items-baseline font-[Proxima_Nova] text-[#6E6659] text-[14px] pb-1">
+                        от:<p class="ml-1 mr-1 text-[#6E6659] text-[24px] font-bold">6 762</p>Р
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="w-[289px] h-[53px] bg-[#50B9B9] self-center mt-[58px] text-white text-[24px] font-bold rounded hover:bg-[#087A28]">Показать еще</button>
+    </main>
 </body>
 </html>

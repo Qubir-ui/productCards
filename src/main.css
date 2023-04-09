@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'Proxima_Nova';
+    src: local('Proxima Nova Regular'), local('Proxima-Nova-Regular'),
+    url('src/fonts/ProximaNova-Regular.ttf') format('woff2'),
+    url('src/fonts/ProximaNova-Regular.woff') format('woff'),
+    url('src/fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Parangon';
+    src: local('Parangon 530 C'), local('Parangon-530-C'),
+    url('src/fonts/Parangon530C.woff2') format('woff2'),
+    url('src/fonts/Parangon530C.woff') format('woff'),
+    url('src/fonts/Parangon530C.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .bg-card{
+        background: url("../img/chair.png");
+    }
+
+    .bg-card:hover{
+        background: url("../img/chair_color.png");
+    }
+}
