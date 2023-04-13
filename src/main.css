@@ -13,9 +13,9 @@
 @font-face {
     font-family: 'Parangon';
     src: local('Parangon 530 C'), local('Parangon-530-C'),
-    url('src/fonts/Parangon530C.woff2') format('woff2'),
-    url('src/fonts/Parangon530C.woff') format('woff'),
-    url('src/fonts/Parangon530C.ttf') format('truetype');
+    url('../src/fonts/Parangon530C.woff2') format('woff2'),
+    url('../src/fonts/Parangon530C.woff') format('woff'),
+    url('../src/fonts/Parangon530C.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

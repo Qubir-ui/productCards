@@ -17,9 +17,9 @@
   font-family: 'Parangon';
 
   src: local('Parangon 530 C'), local('Parangon-530-C'),
-    url('src/fonts/Parangon530C.woff2') format('woff2'),
-    url('src/fonts/Parangon530C.woff') format('woff'),
-    url('src/fonts/Parangon530C.ttf') format('truetype');
+    url('../src/fonts/Parangon530C.woff2') format('woff2'),
+    url('../src/fonts/Parangon530C.woff') format('woff'),
+    url('../src/fonts/Parangon530C.ttf') format('truetype');
 
   font-weight: normal;
 
@@ -697,8 +697,8 @@ video {
   width: 67px;
 }
 
-.w-\[81px\]{
-  width: 81px;
+.w-\[85px\]{
+  width: 85px;
 }
 
 .w-\[9px\]{
@@ -878,10 +878,6 @@ video {
   font-family: Parangon;
 }
 
-.font-\[Proxima\]{
-  font-family: Proxima;
-}
-
 .font-\[Roboto\]{
   font-family: Roboto;
 }
@@ -902,16 +898,16 @@ video {
   font-size: 8px;
 }
 
+.font-\[Proxima_Nova\]{
+  font-weight: Proxima Nova;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
 .font-semibold{
   font-weight: 600;
-}
-
-.font-\[Proxima_Nova\]{
-  font-weight: Proxima Nova;
 }
 
 .uppercase{
@@ -1050,6 +1046,10 @@ video {
   .max-md\:flex-col{
     flex-direction: column;
   }
+
+  .max-md\:self-auto{
+    align-self: auto;
+  }
 }
 
 @media (min-width: 500px){
@@ -1059,6 +1059,10 @@ video {
 
   .min-\[500px\]\:flex-row{
     flex-direction: row;
+  }
+
+  .min-\[500px\]\:self-center{
+    align-self: center;
   }
 }
 
@@ -1090,6 +1094,10 @@ video {
   .md\:flex-col{
     flex-direction: column;
   }
+
+  .md\:self-auto{
+    align-self: auto;
+  }
 }
 
 @media (min-width: 1280px){
@@ -1104,5 +1112,9 @@ video {
 
   .xl\:pt-\[66px\]{
     padding-top: 66px;
+  }
+
+  .xl\:pb-\[66px\]{
+    padding-bottom: 66px;
   }
 }
